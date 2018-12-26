@@ -1,5 +1,6 @@
 package org.jiira.chapter14.config;
 
+import org.jiira.IWebAppInitializer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**

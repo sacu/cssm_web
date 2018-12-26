@@ -1,4 +1,8 @@
-package org.jiira.chapter14.config;
+package org.jiira;
+
+import javax.servlet.ServletRegistration.Dynamic;
+
+import org.jiira.chapter14.config.WebConfig;
 
 public class IWebAppInitializer {
 	//Spring Ioc容器配置
@@ -19,5 +23,8 @@ public class IWebAppInitializer {
 	protected String[] getServletMappings() {
 		// TODO Auto-generated method stub
 		return new String[] {"*.do"};
+	}
+	protected void customizeRegistration(Dynamic dynamic) {
+		
 	}
 }

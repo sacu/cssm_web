@@ -2,10 +2,11 @@ package org.jiira.chapter15.config;
 
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration.Dynamic;
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import org.jiira.IWebAppInitializer;
 
 public class MyWebAppInitializer
-        extends AbstractAnnotationConfigDispatcherServletInitializer {
+        extends IWebAppInitializer {//AbstractAnnotationConfigDispatcherServletInitializer {
 	//Spring IoC容器配置
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
